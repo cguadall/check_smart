@@ -75,7 +75,7 @@ if ($opt_d || $opt_g ) {
             push(@dev,$opt_d);
         } else {
             # glob all devices - try '?' first 
-            @dev =glob($opt_g."?");
+            @dev =glob($opt_g."*[a-z]");
         }
 
         foreach my $opt_dl (@dev){
